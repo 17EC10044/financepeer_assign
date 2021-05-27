@@ -1,0 +1,12 @@
+{% extends 'authenticate/base.html' %}
+
+{% block content %}
+<h1>Data stored in database</h1>
+        
+        {% for dict in File_number %}
+        
+        <p color="red">{{dict}}</p>
+        
+{% endfor %}
+
+{% endblock %}
